@@ -1,6 +1,6 @@
 {
   "name": "@kentcdodds/react-stopwatch",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Don't use this.. It's fake... And I will unpublish soon...",
   "main": "index.js",
   "repository": {
@@ -37,7 +37,8 @@
     "build": "babel --out-dir dist --ignore *.test.js src",
     "test": "jest",
     "cover": "jest --coverage",
-    "watch:test": "jest --watch"
+    "watch:test": "jest --watch",
+    "prepublish": "npm run test && npm run build"
   },
   "jest": {
     "coverageThreshold": {
